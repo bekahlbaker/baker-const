@@ -34,3 +34,9 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## THEME
+[Color Palette](https://flatuicolors.com/palette/in)
+[Photos](https://www.facebook.com/bakerremodelandrestoration/)
+[Design](https://www.canva.com/design/DAF4SMcva4M/BPkCOShJOtr-eIa9Rovubw/edit?utm_content=DAF4SMcva4M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+[Font](https://fonts.google.com/specimen/Saira)
