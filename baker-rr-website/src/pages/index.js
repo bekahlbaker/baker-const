@@ -1,9 +1,15 @@
-import Hero from "../components/Hero/hero";
+import Hero from "../components/Hero/Hero.jsx";
 import styles from "../app/index.module.css";
 import Head from "next/head";
 import Header from "../app/components/Header/Header";
+import { useEffect } from "react";
+import content from "../utils/api/content";
 
 export default function Home() {
+  useEffect(() => {
+    content.getHomePageContent().then((res) => console.log("HOME", res));
+  }, []);
+
   return (
     <>
       <Head>
