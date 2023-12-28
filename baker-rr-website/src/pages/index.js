@@ -5,6 +5,7 @@ import Header from "../app/components/Header/Header";
 import { useEffect } from "react";
 import content from "../utils/api/content";
 import HomeContentAreaOne from "../app/components/Home/ContentAreaOne";
+import Layout from "../app/components/layout";
 
 const inter = Saira({ subsets: ["latin"] });
 
@@ -14,16 +15,18 @@ export default function Home() {
   }, []);
 
   return (
-    <div className={inter.className}>
-      <Head>
-        <title>
-          Baker Remodel and Restoration | Transforming Spaces in East Texas with
-          Expert Craftsmanship
-        </title>
-      </Head>
-      <Header />
-      <Hero />
-      <HomeContentAreaOne />
-    </div>
+    <Layout>
+      <div className={inter.className}>
+        <Head>
+          <title>
+            Baker Remodel and Restoration | Transforming Spaces in East Texas
+            with Expert Craftsmanship
+          </title>
+        </Head>
+        <Header />
+        <Hero />
+        <HomeContentAreaOne />
+      </div>
+    </Layout>
   );
 }
