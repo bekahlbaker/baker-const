@@ -14,6 +14,7 @@ const Example = () => {
     <div>
       <h1>{fields.title}</h1>
       <p>
+        Content
         {fields.mainContent?.content[0]?.content.map((entry) => entry.value)}
       </p>
     </div>
