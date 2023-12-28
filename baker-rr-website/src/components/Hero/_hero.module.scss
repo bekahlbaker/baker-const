@@ -1,7 +1,35 @@
 // Add your SCSS code here
 .hero {
   background-color: #000;
-  color: #fff;
   padding: 0;
-  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image:
+  linear-gradient(200deg, rgba(245, 246, 252, 0.15) 25%, rgba(0, 0, 0, 0.9) 65%),
+  url('../../../public/images/hero.jpeg');
+  background-position: center;
+  background-size: cover;
+  color: #000;
+}
+
+.hero_content {
+  z-index: 999;
+  margin: 50vh 10vw;
+  width: 50vw;
+  color: #fff;
+}
+
+.hero_button {
+    background: #3B3B98;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding: 8px 24px;
 }

@@ -1,10 +1,12 @@
 import Hero from "../components/Hero/hero";
-import styles from "../app/index.module.css";
 import Head from "next/head";
+import { Saira } from "next/font/google";
+
+const inter = Saira({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <>
+    <div className={inter.className}>
       <Head>
         <title>
           Baker Remodel and Restoration | Transforming Spaces in East Texas with
@@ -12,9 +14,6 @@ export default function Home() {
         </title>
       </Head>
       <Hero />
-      <main className={styles.main}>
-        <h1>Test</h1>
-      </main>
-    </>
+    </div>
   );
 }
