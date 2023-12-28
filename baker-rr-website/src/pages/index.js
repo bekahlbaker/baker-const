@@ -1,4 +1,4 @@
-import Hero from "../components/Hero/Hero.jsx";
+import Hero from "../components/Hero/hero.jsx";
 import styles from "../app/index.module.css";
 import Head from "next/head";
 import Header from "../app/components/Header/Header";
