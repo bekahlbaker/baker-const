@@ -5,13 +5,13 @@ import Head from "next/head";
 export default function Home() {
   return (
     <>
-    <Hero />
       <Head>
         <title>
           Baker Remodel and Restoration | Transforming Spaces in East Texas with
           Expert Craftsmanship
         </title>
       </Head>
+      <Hero />
       <main className={styles.main}>
         <h1>Test</h1>
       </main>
