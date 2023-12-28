@@ -1,7 +1,6 @@
-import Hero from "../../components/Hero/Hero"
+import Hero from "../app/components/Hero/Hero"
 import Head from "next/head";
 import { Saira } from "next/font/google";
-import Head from "next/head";
 import Header from "../app/components/Header/Header";
 import { useEffect } from "react";
 import content from "../utils/api/content";
