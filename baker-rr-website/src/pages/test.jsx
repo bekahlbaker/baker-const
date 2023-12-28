@@ -1,16 +1,13 @@
 import React, { useState, useEffect } from "react";
-import * as contentful from "contentful";
-
-const contentfulClient = contentful.createClient({
-  accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
-  space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
-});
+import content from "@/utils/api/content";
 
 const Example = () => {
   const [fields, setFields] = useState({});
 
   useEffect(() => {
-    contentfulClient.getEntries().then((res) => setFields(res.items[0].fields));
+    content
+      .getSinglePage("61AtoItHbpFYJkEBnguyA7")
+      .then((res) => setFields(res.fields));
   }, []);
 
   return (
