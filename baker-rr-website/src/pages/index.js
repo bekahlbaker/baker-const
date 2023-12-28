@@ -1,6 +1,7 @@
 import Hero from "../components/Hero/hero";
 import styles from "../app/index.module.css";
 import Head from "next/head";
+import Header from "../app/components/Header/Header";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
           Expert Craftsmanship
         </title>
       </Head>
+      <Header />
       <Hero />
       <main className={styles.main}>
         <h1>Test</h1>
