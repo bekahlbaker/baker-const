@@ -5,7 +5,10 @@ import Header from "../app/components/Header/Header";
 import { useEffect } from "react";
 import content from "../utils/api/content";
 import HomeContentAreaOne from "../app/components/Home/ContentAreaOne";
-import Layout from "../app/components/layout";
+import dynamic from "next/dynamic";
+const Layout = dynamic(() => import("../app/components/layout"), {
+  ssr: false,
+});
 
 const inter = Saira({ subsets: ["latin"] });
 
