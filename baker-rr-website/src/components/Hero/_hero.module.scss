@@ -1,7 +1,10 @@
+@import "src/styles/variables.scss";
+
 // Add your SCSS code here
 .hero {
   background-color: #000;
   color: #fff;
   padding: 0;
   margin: 0;
+  background-color: $primaryColor !important;
 }
