@@ -1,9 +1,10 @@
-import Hero from "../app/components/Hero/Hero"
+import Hero from "../app/components/Hero/Hero";
 import Head from "next/head";
 import { Saira } from "next/font/google";
 import Header from "../app/components/Header/Header";
 import { useEffect } from "react";
 import content from "../utils/api/content";
+import HomeContentAreaOne from "../app/components/Home/ContentAreaOne";
 
 const inter = Saira({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function Home() {
       </Head>
       <Header />
       <Hero />
+      <HomeContentAreaOne />
     </div>
   );
 }
