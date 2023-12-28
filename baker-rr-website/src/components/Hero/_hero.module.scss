@@ -1,3 +1,5 @@
+@import "src/styles/variables.scss";
+
 // Add your SCSS code here
 .hero {
   background-color: #000;
@@ -14,6 +16,8 @@
   background-position: center;
   background-size: cover;
   color: #000;
+  margin: 0;
+  background-color: $primaryColor !important;
 }
 
 .hero_content {

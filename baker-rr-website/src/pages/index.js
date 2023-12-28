@@ -1,10 +1,18 @@
-import Hero from "../components/Hero/hero";
+import Hero from "../../components/Hero/Hero"
 import Head from "next/head";
 import { Saira } from "next/font/google";
+import Head from "next/head";
+import Header from "../app/components/Header/Header";
+import { useEffect } from "react";
+import content from "../utils/api/content";
 
 const inter = Saira({ subsets: ["latin"] });
 
 export default function Home() {
+  useEffect(() => {
+    content.getHomePageContent().then((res) => console.log("HOME", res));
+  }, []);
+
   return (
     <div className={inter.className}>
       <Head>
@@ -13,6 +21,7 @@ export default function Home() {
           Expert Craftsmanship
         </title>
       </Head>
+      <Header />
       <Hero />
     </div>
   );
