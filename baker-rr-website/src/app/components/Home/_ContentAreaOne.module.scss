@@ -1,5 +1,15 @@
 @import "src/styles/variables.scss";
 
-.contentAreaOne {
-  background-color: blue;
+.contentAreaOne :global {
+  padding-top: 138px;
+  padding-bottom: 138px;
+
+  .content {
+    display: flex;
+  }
+
+  .left,
+  .right {
+    width: 50%;
+  }
 }

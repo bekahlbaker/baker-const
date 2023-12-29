@@ -1,8 +1,15 @@
 // Colors
 $primaryColor: green;
 
-// etc
+// Breakpoints
+$tablet: 768px;
+$desktop: 1024px;
+$largeDesktop: 1440px;
+$xLargeDesktop: 1920px;
 
 :export {
   primaryColor: $primaryColor;
+  tablet: $tablet;
+  desktop: $desktop;
+  largeDesktop: $largeDesktop;
 }
