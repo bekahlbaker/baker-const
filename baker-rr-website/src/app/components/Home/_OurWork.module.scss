@@ -5,10 +5,15 @@
   color: white;
   padding-bottom: 64px;
   padding-top: 64px;
+  padding-bottom: 64px;
 
   .card-row {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 48px;
+
+    @media (min-width: $tablet) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 }
