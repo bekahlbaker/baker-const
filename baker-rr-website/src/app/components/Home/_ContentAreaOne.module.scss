@@ -1,15 +1,31 @@
 @import "src/styles/variables.scss";
 
 .contentAreaOne :global {
-  padding-top: 138px;
-  padding-bottom: 138px;
-
-  .content {
-    display: flex;
-  }
+  color: white;
+  display: flex;
+  height: 620px;
 
   .left,
   .right {
     width: 50%;
+  }
+
+  .left {
+    overflow: hidden;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  .right {
+    background-color: $primaryGray;
+    padding: 138px 84px;
+  }
+
+  h4 {
+    color: $primaryAccentYellow;
   }
 }
