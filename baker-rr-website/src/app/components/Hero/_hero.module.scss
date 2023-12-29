@@ -1,7 +1,7 @@
 @import "../../../../src/styles/variables.scss";
 
 // Add your SCSS code here
-.hero {
+.hero :global {
   background-color: #000;
   padding: 0;
   height: 100vh;
@@ -16,39 +16,39 @@
   background-size: cover;
   color: #000;
   display: flex;
-}
 
-.hero_content {
-  margin-top: 38vh;
-  width: 66vw;
-  color: #fff;
-
-  @media screen and (max-width: 480px) { // TODO
-    margin-top: 30vh;
-    width: 80vw;
-  }
-
-  .subtitle {
-    font-size: 24px;
-    font-weight: 400;
+  .hero_content {
+    margin-top: 38vh;
     width: 66vw;
-    margin-bottom: 48px;
-
+    color: #fff;
+  
     @media screen and (max-width: 480px) { // TODO
+      margin-top: 30vh;
       width: 80vw;
-      margin-bottom: 70px;
+    }
+  
+    .subtitle {
+      font-size: 24px;
+      font-weight: 400;
+      width: 66vw;
+      margin-bottom: 48px;
+  
+      @media screen and (max-width: 480px) { // TODO
+        width: 80vw;
+        margin-bottom: 70px;
+      }
     }
   }
-}
-
-.hero_button {
-  background: $primaryBlue;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 700;
-  border-radius: 4px;
-  outline: none;
-  border: none;
-  padding: 4px 100px;
-  color: #fff;
+  
+  .hero_button {
+    background: $primaryBlue;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding: 4px 100px;
+    color: #fff;
+  }
 }
