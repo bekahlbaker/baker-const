@@ -20,8 +20,8 @@ const responsive = {
 };
 
 const TestimonialCarousel = ({ items }) => {
-  if (!items )return null;
 
+  if (!Array.isArray(items)) return null;
     return (
         <Carousel
         swipeable={true}
@@ -42,8 +42,8 @@ const TestimonialCarousel = ({ items }) => {
         >
         {items?.map((item) => (
             <div className="carousel-item">
-                <p>{item?.split("-")[0] || ''}</p>
-                <p><i>{item?.split("-")[1] || ''}</i></p>
+                <p>{item?.fields.testimonial || ''}</p>
+                <p><i>{item?.fields.customerName || ''}</i></p>
             </div>
         ))}
         </Carousel>

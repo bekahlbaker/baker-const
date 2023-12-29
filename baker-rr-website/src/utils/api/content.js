@@ -11,4 +11,6 @@ export default {
   getSinglePage: (page_id) => contentfulClient.getEntry(page_id),
   getOurWorkEntries: () =>
     contentfulClient.getEntries({ content_type: "ourWork" }),
+  getTestimonialsEntries: () =>
+  contentfulClient.getEntries({ content_type: "testimonials" }),
 };
