@@ -1,5 +1,6 @@
 import styles from "./_hero.module.scss";
 import Container from "../Container/Container";
+import Link from "next/link";
 
 export default function Hero({ photo, title, subtitle }) {
   return (
@@ -13,9 +14,9 @@ export default function Hero({ photo, title, subtitle }) {
         <div className="hero_content">
           <h1>{title}</h1>
           <p className="subtitle">{subtitle}</p>
-          <a className="hero_button" href="#contact">
+          <Link className="hero_button" href="#contact">
             Contact us now
-          </a>
+          </Link>
         </div>
       </Container>
     </section>
