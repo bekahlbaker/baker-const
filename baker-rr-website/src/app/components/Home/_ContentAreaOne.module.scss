@@ -2,30 +2,50 @@
 
 .contentAreaOne :global {
   color: white;
-  display: flex;
-  height: 620px;
+  // display: flex;
+  // height: 620px;
 
   .left,
   .right {
-    width: 50%;
+    width: 100%;
   }
 
   .left {
+    height: 512px;
     overflow: hidden;
 
     img {
       height: 100%;
       object-fit: cover;
-      width: 100%;
+      object-position: center;
+      width: calc(100% + 1px);
     }
   }
 
   .right {
     background-color: $primaryGray;
-    padding: 138px 84px;
+    padding: 72px 24px;
   }
 
   h4 {
     color: $primaryAccentYellow;
+  }
+
+  @media (min-width: $tablet) {
+    display: flex;
+    height: 620px;
+
+    .left,
+    .right {
+      width: 50%;
+    }
+
+    .left {
+      height: 100%;
+    }
+
+    .right {
+      padding: 138px 84px;
+    }
   }
 }
