@@ -1,4 +1,4 @@
-@import "src/styles/variables.scss";
+@import "../../../../src/styles/variables.scss";
 
 // Add your SCSS code here
 .hero {
@@ -19,23 +19,24 @@
 }
 
 .hero_content {
-  // margin: 50vh 10vw;
+  margin-top: 50vh;
   width: 50vw;
   color: #fff;
 
-  @media screen and (max-width: 480px) {
-    margin: 25vh 5vw;
-    width: 100vw;
+  @media screen and (max-width: 480px) { // TODO
+    margin-top: 30vh;
+    width: 80vw;
   }
 }
 
 .hero_button {
-  background: #3b3b98;
+  background: $primaryBlue;
   cursor: pointer;
   font-size: 14px;
   font-weight: 700;
   border-radius: 4px;
   outline: none;
   border: none;
-  padding: 8px 24px;
+  padding: 4px 100px;
+  color: #fff;
 }

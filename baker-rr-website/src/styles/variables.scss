@@ -1,8 +1,14 @@
 // Colors
-$primaryColor: green;
+$primaryBlue: #3b3b98;
+$primaryGray: #2C3A47;
+$primaryAccentYellow: #EAB543;
+$primaryLightGray: #CAD3C8;
 
 // etc
 
 :export {
-  primaryColor: $primaryColor;
+  primaryBlue: $primaryBlue;
+  primaryGray: $primaryGray;
+  primaryAccentYellow: $primaryAccentYellow;
+  primaryLightGray: $primaryLightGray;
 }
