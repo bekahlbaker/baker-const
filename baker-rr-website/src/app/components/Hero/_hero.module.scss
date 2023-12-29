@@ -19,13 +19,25 @@
 }
 
 .hero_content {
-  margin-top: 50vh;
-  width: 50vw;
+  margin-top: 38vh;
+  width: 66vw;
   color: #fff;
 
   @media screen and (max-width: 480px) { // TODO
     margin-top: 30vh;
     width: 80vw;
+  }
+
+  .subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    width: 66vw;
+    margin-bottom: 48px;
+
+    @media screen and (max-width: 480px) { // TODO
+      width: 80vw;
+      margin-bottom: 70px;
+    }
   }
 }
 

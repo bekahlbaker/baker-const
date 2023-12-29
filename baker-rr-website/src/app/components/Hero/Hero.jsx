@@ -12,12 +12,11 @@ export default function Hero() {
             Do you need a new home built?
             <br />
             Call us today.
-          </h1>
-          <h2 className={globals.subtitle}>
-            Your dream home can be a reality.
             <br />
-            Let us help you make it happen.
-          </h2>
+          </h1>
+          <p className={styles.subtitle}>
+            Your dream home can be a reality. Let us help you make it happen.
+          </p>
           <button className={styles.hero_button}>
             <p>GET IN TOUCH</p>
           </button>
