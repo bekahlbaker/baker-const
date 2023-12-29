@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./_ContentAreaOne.module.scss";
-import Container from "../Container/Container";
 
 const HomeContentAreaOne = ({ photo, title, subtitle, text }) => {
   return (
