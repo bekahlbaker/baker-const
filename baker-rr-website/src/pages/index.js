@@ -38,7 +38,11 @@ export default function Home() {
           </title>
         </Head>
         <Header />
-        <Hero />
+        <Hero
+          photo={fields?.mainAreaPhoto?.fields?.file?.url}
+          title={fields?.mainAreaHeadline}
+          subtitle={fields?.mainAreaSubHeadline}
+        />
 
         <HomeContentAreaOne
           photo={fields?.contentArea1Image?.fields?.file?.url}
