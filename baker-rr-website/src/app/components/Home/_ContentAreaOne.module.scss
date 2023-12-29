@@ -2,8 +2,6 @@
 
 .contentAreaOne :global {
   color: white;
-  // display: flex;
-  // height: 620px;
 
   .left,
   .right {
@@ -18,6 +16,7 @@
       height: 100%;
       object-fit: cover;
       object-position: center;
+      // stupid hack to fix the image not filling the entire container
       width: calc(100% + 1px);
     }
   }

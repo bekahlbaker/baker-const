@@ -20,6 +20,8 @@ export default function Home() {
     content.getHomePageContent().then((res) => {
       setFields(res.fields);
     });
+
+    console.log(fields);
   }, [fields]);
 
   return (
@@ -32,7 +34,11 @@ export default function Home() {
           </title>
         </Head>
         <Header />
-        <Hero />
+        <Hero
+          photo={fields?.mainAreaPhoto?.fields?.file?.url}
+          title={fields?.mainAreaHeadline}
+          subtitle={fields?.mainAreaSubHeadline}
+        />
 
         <HomeContentAreaOne
           photo={fields?.contentArea1Image?.fields?.file?.url}
