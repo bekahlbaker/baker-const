@@ -10,8 +10,16 @@ const HomeContentAreaTwo = ({ photo, title, subtitle, textOne, textTwo }) => {
             <h2>{title}</h2>
             <h4>{subtitle}</h4>
             <div className="text-wrapper">
-                <p className="left">{textOne}</p>
-                <p className="right">{textTwo}</p>
+                <div>
+                  <p className="left title">Our Core Values</p>
+                  <p className="left">{textOne}</p>
+                </div>
+        
+                <div>
+                  <p className="right title">Our Service Approach</p>
+                  <p className="right">{textTwo}</p>
+                </div>
+                
             </div>
       </Container>
     </section>
