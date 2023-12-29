@@ -26,8 +26,6 @@ export default function Home() {
     });
   }, [fields]);
 
-  console.log(fields);
-
   return (
     <Layout>
       <div className={inter.className}>
@@ -57,7 +55,7 @@ export default function Home() {
           textTwo={fields?.contentArea2ParagraphTwo}
         />
         <OurWork />
-        <Testimonials items={fields?.testimonials} />
+        <Testimonials />
       </div>
     </Layout>
   );
