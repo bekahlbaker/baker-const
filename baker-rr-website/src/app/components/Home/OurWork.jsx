@@ -19,8 +19,6 @@ const OurWork = () => {
         <h2>Our work</h2>
         <div className="card-row">
           {Object.keys(items).map((key) => {
-            console.log(items[key].fields);
-
             return (
               <OurWorkCard
                 title={items[key].fields.title}
