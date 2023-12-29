@@ -3,7 +3,7 @@ import styles from "./_ContentAreaOne.module.scss";
 
 const HomeContentAreaOne = ({ photo, title, subtitle, text }) => {
   return (
-    <section class={styles.contentAreaOne}>
+    <section className={styles.contentAreaOne}>
       <div className="left">
         <img src={photo} alt="" />
       </div>
