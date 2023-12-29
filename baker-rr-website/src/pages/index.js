@@ -2,7 +2,7 @@ import Hero from "../app/components/Hero/Hero";
 import Head from "next/head";
 import { Saira } from "next/font/google";
 import Header from "../app/components/Header/Header";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import content from "../utils/api/content";
 import HomeContentAreaOne from "../app/components/Home/ContentAreaOne";
 import dynamic from "next/dynamic";
@@ -13,9 +13,13 @@ const Layout = dynamic(() => import("../app/components/layout"), {
 const inter = Saira({ subsets: ["latin"] });
 
 export default function Home() {
+  const [fields, setFields] = useState({});
+
   useEffect(() => {
-    content.getHomePageContent().then((res) => console.log("HOME", res));
-  }, []);
+    content.getHomePageContent().then((res) => {
+      setFields(res.fields);
+    });
+  }, [fields]);
 
   return (
     <Layout>
@@ -28,7 +32,9 @@ export default function Home() {
         </Head>
         <Header />
         <Hero />
-        <HomeContentAreaOne />
+        <HomeContentAreaOne
+          photo={fields?.contentArea1Image?.fields?.file?.url}
+        />
       </div>
     </Layout>
   );
