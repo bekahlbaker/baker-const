@@ -7,6 +7,7 @@ import content from "../utils/api/content";
 import HomeContentAreaOne from "../app/components/Home/ContentAreaOne";
 import dynamic from "next/dynamic";
 import HomeContentAreaTwo from "@/app/components/Home/ContentAreaTwo";
+import OurWork from "@/app/components/Home/OurWork";
 const Layout = dynamic(() => import("../app/components/layout"), {
   ssr: false,
 });
@@ -47,11 +48,12 @@ export default function Home() {
           text={fields?.contentArea1Paragraph}
         />
         <HomeContentAreaTwo
-        title={fields?.contentArea2Headline}
-        subtitle={fields?.contentArea2SubHeadline}
-        textOne={fields?.contentArea2ParagraphLeft}
-        textTwo={fields?.contentArea2ParagraphRight}
+          title={fields?.contentArea2Headline}
+          subtitle={fields?.contentArea2SubHeadline}
+          textOne={fields?.contentArea2ParagraphLeft}
+          textTwo={fields?.contentArea2ParagraphRight}
         />
+        <OurWork />
       </div>
     </Layout>
   );
