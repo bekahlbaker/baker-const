@@ -18,7 +18,8 @@
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: row;
-    padding: 138px 84px 13px;
+    padding-bottom: 13px;
+    padding-top: 64px;
 
     h4 {
         width: 45vw;

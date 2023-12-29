@@ -41,10 +41,10 @@ export default function Home() {
           text={fields?.contentArea1Paragraph}
         />
         <HomeContentAreaTwo
-        title="Residential Construction Services"
-        subtitle="We specialize in new construction, remodeling, and renovations."
-        textOne="Talk about your company's guiding principles and approach to service. Think about what sets you apart from your competition and highlight them here. Whether it's a unique service, outstanding quality, value for money, or any other thing, having a differentiating factor will make you more attractive to all the other companies that say the same thing"
-        textTwo="Talk about your company's guiding principles and approach to service. Think about what sets you apart from your competition and highlight them here. Whether it's a unique service, outstanding quality, value for money, or any other thing, having a differentiating factor will make you more attractive to all the other companies that say the same thing"
+        title={fields?.contentArea2Headline}
+        subtitle={fields?.contentArea2SubHeadline}
+        textOne={fields?.contentArea2ParagraphLeft}
+        textTwo={fields?.contentArea2ParagraphRight}
         />
       </div>
     </Layout>
