@@ -1,0 +1,26 @@
+@import "src/styles/variables.scss";
+
+.footer :global {
+  background: #333;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding-top: 84px;
+  padding-bottom: 200px;
+
+  img {
+    display: block;
+    margin-bottom: 144px;
+  }
+
+  .footer-blocks {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 48px;
+
+    @media (min-width: $desktop) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}

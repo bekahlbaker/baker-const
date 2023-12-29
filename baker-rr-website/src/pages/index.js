@@ -1,7 +1,6 @@
 import Hero from "../app/components/Hero/Hero";
 import Head from "next/head";
 import { Saira } from "next/font/google";
-import Header from "../app/components/Header/Header";
 import { useEffect, useState } from "react";
 import content from "../utils/api/content";
 import HomeContentAreaOne from "../app/components/Home/ContentAreaOne";
@@ -9,7 +8,6 @@ import dynamic from "next/dynamic";
 import HomeContentAreaTwo from "@/app/components/Home/ContentAreaTwo";
 import OurWork from "@/app/components/Home/OurWork";
 import Testimonials from "@/app/components/Home/Testimonials";
-
 
 const Layout = dynamic(() => import("../app/components/layout"), {
   ssr: false,
@@ -37,7 +35,6 @@ export default function Home() {
             with Expert Craftsmanship
           </title>
         </Head>
-        <Header />
         <Hero
           photo={fields?.mainAreaPhoto?.fields?.file?.url}
           title={fields?.mainAreaHeadline}
