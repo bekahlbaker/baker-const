@@ -4,7 +4,8 @@ import Container from "../Container/Container";
 
 const HomeContentAreaTwo = ({ photo, title, subtitle, textOne, textTwo }) => {
   return (
-    <section class={styles.contentAreaTwo}>
+    <>
+        <section class={styles.contentAreaTwo}>
         <Container>
             <h2>{title}</h2>
             <h4>{subtitle}</h4>
@@ -14,6 +15,8 @@ const HomeContentAreaTwo = ({ photo, title, subtitle, textOne, textTwo }) => {
             </div>
       </Container>
     </section>
+    <div class={styles.banner} />
+    </>
   );
 };
 

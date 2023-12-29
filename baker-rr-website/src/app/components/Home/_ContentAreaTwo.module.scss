@@ -18,7 +18,7 @@
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: row;
-    padding: 138px 84px;
+    padding: 138px 84px 13px;
 
     h4 {
         width: 45vw;
@@ -38,4 +38,10 @@
         flex-direction: row;
     }
   }
+}
+
+.banner {
+  height: 125px;
+  background-color: $primaryAccentYellow;
+  width: 100vw;
 }
