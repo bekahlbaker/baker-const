@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import content from "../utils/api/content";
 import HomeContentAreaOne from "../app/components/Home/ContentAreaOne";
 import dynamic from "next/dynamic";
+import HomeContentAreaTwo from "@/app/components/Home/ContentAreaTwo";
 const Layout = dynamic(() => import("../app/components/layout"), {
   ssr: false,
 });
@@ -38,6 +39,12 @@ export default function Home() {
           title={fields?.contentArea1Headline}
           subtitle={fields?.contentArea1SubHeadline}
           text={fields?.contentArea1Paragraph}
+        />
+        <HomeContentAreaTwo
+        title="Residential Construction Services"
+        subtitle="We specialize in new construction, remodeling, and renovations."
+        textOne="Talk about your company's guiding principles and approach to service. Think about what sets you apart from your competition and highlight them here. Whether it's a unique service, outstanding quality, value for money, or any other thing, having a differentiating factor will make you more attractive to all the other companies that say the same thing"
+        textTwo="Talk about your company's guiding principles and approach to service. Think about what sets you apart from your competition and highlight them here. Whether it's a unique service, outstanding quality, value for money, or any other thing, having a differentiating factor will make you more attractive to all the other companies that say the same thing"
         />
       </div>
     </Layout>

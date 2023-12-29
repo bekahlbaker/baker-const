@@ -1,0 +1,41 @@
+@import "src/styles/variables.scss";
+
+.contentAreaTwo :global {
+  color: #000;
+  display: flex;
+
+  h4 {
+    color: $primaryAccentYellow;
+    width: 75vw;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    padding-bottom: 16px;
+  }
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+    padding: 138px 84px;
+
+    h4 {
+        width: 45vw;
+    }
+
+    .left,
+    .right {
+      width: 50%;
+    }
+
+    .left {
+      padding-right: 12px;
+    }
+
+    .text-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+  }
+}
