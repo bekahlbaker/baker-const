@@ -1,0 +1,10 @@
+@import "src/styles/variables.scss";
+
+.testimonials :global {
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    .carousel-item {
+        padding: 32px;
+    }
+}

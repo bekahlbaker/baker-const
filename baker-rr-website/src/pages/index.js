@@ -8,6 +8,9 @@ import HomeContentAreaOne from "../app/components/Home/ContentAreaOne";
 import dynamic from "next/dynamic";
 import HomeContentAreaTwo from "@/app/components/Home/ContentAreaTwo";
 import OurWork from "@/app/components/Home/OurWork";
+import Testimonials from "@/app/components/Home/Testimonials";
+
+
 const Layout = dynamic(() => import("../app/components/layout"), {
   ssr: false,
 });
@@ -22,6 +25,8 @@ export default function Home() {
       setFields(res.fields);
     });
   }, [fields]);
+
+  console.log(fields);
 
   return (
     <Layout>
@@ -48,6 +53,7 @@ export default function Home() {
           textTwo={fields?.contentArea2ParagraphTwo}
         />
         <OurWork />
+        <Testimonials items={fields?.testimonials} />
       </div>
     </Layout>
   );
