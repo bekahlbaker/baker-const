@@ -16,14 +16,14 @@ const Footer = () => {
     <footer
       className={styles.footer}
       style={{
-        backgroundImage: `linear-gradient(200deg,rgba(0, 0, 0, 0.10),rgba(0, 0, 0, .9)),url(${fields?.footerBackgroundImage?.fields?.file?.url})`,
+        backgroundImage: `linear-gradient(200deg,rgba(0, 0, 0, 0.30),rgba(0, 0, 0, .9)),url(${fields?.footerBackgroundImage?.fields?.file?.url})`,
       }}
     >
       <Container>
         <div className="content">
           <img src="https://place-hold.it/180x68/3B3B98/ffffff&text=BakerRR&bold&fontsize=22" />
           <div>
-            <h2>Contact us</h2>
+            <h2 id="contact">Contact us</h2>
             <div className="footer-blocks">
               <div className="address">
                 <div>Baker Remodel and Restoration</div>
@@ -31,8 +31,12 @@ const Footer = () => {
                 <div>City, State 12345</div>
               </div>
               <div className="contact">
-                <div>Phone: 123-456-7890</div>
-                <div>Email: test@gmail.com</div>
+                <div>
+                  Phone: <a href="tel:9037142285">903-714-2285</a>
+                </div>
+                <div>
+                  Email: <a href="mailto:test@gmail.com">test@gmail.com</a>
+                </div>
                 <div>Instagram: @bakerrandr</div>
               </div>
               <div className="text">
