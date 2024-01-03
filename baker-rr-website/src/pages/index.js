@@ -1,3 +1,4 @@
+import React from "react";
 import Hero from "../app/components/Hero/Hero";
 import Head from "next/head";
 import { Saira } from "next/font/google";

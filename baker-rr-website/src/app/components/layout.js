@@ -11,10 +11,10 @@ export default function Layout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <SpeedInsights />
         <Header />
         {children}
         <Footer />
+        <SpeedInsights />
       </body>
     </html>
   );
