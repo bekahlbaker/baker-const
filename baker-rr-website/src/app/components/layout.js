@@ -1,3 +1,4 @@
+import React from "react";
 import { Saira } from "next/font/google";
 import "../globals.css";
 import Footer from "./Footer/Footer";
