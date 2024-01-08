@@ -32,10 +32,13 @@ const Footer = () => {
               </div>
               <div className="contact">
                 <div>
-                  Phone: <a href="tel:9037142285">903-714-2285</a>
+                  Call or Text: <a href="tel:9037142285">903-714-2285</a>
                 </div>
                 <div>
-                  Email: <a href="mailto:test@gmail.com">test@gmail.com</a>
+                  Email:{" "}
+                  <a href="mailto:bakerremodel@yahoo.com">
+                    bakerremodel@yahoo.com
+                  </a>
                 </div>
               </div>
               <div className="text">
