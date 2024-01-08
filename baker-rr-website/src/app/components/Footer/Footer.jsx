@@ -26,9 +26,9 @@ const Footer = () => {
             <h2 id="contact">Contact us</h2>
             <div className="footer-blocks">
               <div className="address">
-                <div>Baker Remodel and Restoration</div>
-                <div>1234 Main Street</div>
-                <div>City, State 12345</div>
+                <div>Baker Remodel & Restoration LLC</div>
+                <div>680 W Dallas St Ste 3</div>
+                <div>Canton, TX 75103</div>
               </div>
               <div className="contact">
                 <div>
@@ -37,11 +37,10 @@ const Footer = () => {
                 <div>
                   Email: <a href="mailto:test@gmail.com">test@gmail.com</a>
                 </div>
-                <div>Instagram: @bakerrandr</div>
               </div>
               <div className="text">
                 Have a project in mind? We're here to bring your vision to life.
-                Contact Baker Remodel and Restoration for tailored remodeling
+                Contact Baker Remodel & Restoration LLC for tailored remodeling
                 solutions and expert guidance.
               </div>
             </div>

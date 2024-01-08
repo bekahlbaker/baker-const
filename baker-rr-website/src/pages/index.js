@@ -30,7 +30,7 @@ export default function Home() {
       <div className={inter.className}>
         <Head>
           <title>
-            Baker Remodel and Restoration | Transforming Spaces in East Texas
+            Baker Remodel & Restoration LLC | Transforming Spaces in East Texas
             with Expert Craftsmanship
           </title>
         </Head>
